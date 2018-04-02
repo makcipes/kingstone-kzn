@@ -4,8 +4,9 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: fixed;
     z-index: 999;
-    background-color: #fff;
-    width: 100%
+    background-color: #000;
+    color: #fff ;
+    width: 100%;
 }
 
 header .menu {
@@ -14,11 +15,15 @@ header .menu {
     text-transform: uppercase;
     font-size: .8em;
     letter-spacing: 2px;
+    align-items: flex-end;
 }
 
 .logo {
     justify-content: center;
     display: flex;
+    align-items: center;
+    height: 100%
+
 }
 
 header .menu ul {
@@ -30,6 +35,7 @@ header .menu ul {
 
 header .menu ul li {
     margin: 0 10px;
+    white-space: nowrap;
 }
 
 body {
@@ -56,7 +62,7 @@ h2 {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;
     color: #fff;
     height: 100vh;
@@ -67,6 +73,10 @@ h2 {
 
 .top-title {
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+
 }
 
 .top-phone {
@@ -79,8 +89,9 @@ h2 {
 
 .top-phone a {
     font-size: 1.4vw;
-    padding-top: 10px;
-    padding-right: 1.6vw;
+    margin-top: 10px;
+    margin-right: 1.6vw;
+    color: #fff;
 }
 
 .top-phone img {
@@ -88,7 +99,19 @@ h2 {
     vertical-align: middle;
     margin-right: 10px;
 }
+.top-button-phone {
+    z-index: 1;
+    border: .5px solid #fff;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    font-size: 0.9em!important;
+}
 
+.top-button-phone:hover {
+    background: #fff;
+    color: #000;
+    transition: .2s ease-out;
+}
 .top-button {
     z-index: 1;
     border: .5px solid #fff;
